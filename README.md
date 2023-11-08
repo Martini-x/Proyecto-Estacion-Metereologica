@@ -90,6 +90,26 @@ Estas mejoras podrían hacer que la pequeña estación meteorológica sea aún m
 Nombre: ESP32 - Wi-Fi & Bluetooth MCU
 ![ESP32](images/esp32.png)
 Descripcion: ESP32 de 38 Pines es una placa de desarrollo que integra el microcontrolador ESP32-WROOM-32 SMD de Espressif. Esta placa permite controlar todo tipo de sensores, módulos y actuadores mediante WIFI y BLUETOOTH, para proyectos de Internet de las cosas “IoT” de forma eficiente y económica.
+
+Caracteristicas tecnicas: 
+Tipo: Módulo Wifi + Bluetooth
+Modelo: ESP32 38 Pines
+Voltaje de Alimentación (USB): 5V DC
+Voltaje de Entradas/Salidas: 3.3V DC
+Consumo de energía de 5μA en modo de suspensión
+CPU principal: Tensilica Xtensa 32-bit LX6
+Frecuencia de Reloj: hasta 240Mhz
+Procesador secundario: Permite hacer operaciones básica en modo de ultra bajo consumo
+Wifi: 802.11 b/g/n/e/i (802.11n @ 2.4 GHz hasta 150 Mbit/s)
+Bluetooth: 4.2 BR/EDR BLE Modo de control dual
+Memoria: 448 KByte ROM, 520 KByte SRAM, 6 KByte SRAM en RTC y QSPI admite múltiples chips flash /
+SRAM
+Chip USB-Serial: CP2102
+Antena en PCB
+Pines Digitales GPIO: 24  (Algunos pines solo como entrada)
+Conversor Analógico Digital: Dos ADC de 12bits tipo SAR, soporta mediciones en hasta 18 canales, algunos pines soporta un amplificador con ganancia programable
+
+![ESP32](images/ESP32-Pinout.png)
 ### Sensor Intensidad Luz UV 
 
 Nombre: Guva-s12s 
