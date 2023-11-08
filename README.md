@@ -64,24 +64,6 @@ Estas mejoras podrían hacer que la pequeña estación meteorológica sea aún m
 ---
 
 
-### *Estudio de factibilidad:
-
-  Como ya se vio en la investigacion de los antecedentes de la estacion metereologica existen muchas funciones que se pueden aplicar, pero en el proyecto se van a tomar como esenciales la implementacion de los siguientes items:
-  
-  -Microcontrolador: Se usara el ESP32 por su buena capacidad de procesamiento, cantidad de perifericos, cantidad de puertos, cantidad de puertos GPIO y mas iportante en este proyecto, comunicacion wifi y bluetooth.
-  - Sensores:
-    - Temperatura
-    - Humedad
-    - Precipitacion
-    - Direccion del viento
-    - Velocidad del viento
-    - Presion atmosferica
-    - Indice UV
-  * Los sensores usados se explican en el diagrama de bloques
-  
-  - Muestra de Datos mediante display OLED
-  - Muestra de datos mediante aplicacipn y pagina web (WIFI)
----
 
 ### *Diagrama de bloques:
 ![Diagrama de bloques](images/Diagrama-en-blanco.png)
@@ -102,4 +84,37 @@ Estas mejoras podrían hacer que la pequeña estación meteorológica sea aún m
 ---
 
 
+## Listado de componentes 
+### Microcontrolador
+
+Nombre: ESP32 - Wi-Fi & Bluetooth MCU
+![ESP32](images/esp32.png)
+Descripcion: ESP32 de 38 Pines es una placa de desarrollo que integra el microcontrolador ESP32-WROOM-32 SMD de Espressif. Esta placa permite controlar todo tipo de sensores, módulos y actuadores mediante WIFI y BLUETOOTH, para proyectos de Internet de las cosas “IoT” de forma eficiente y económica.
+### Sensor Intensidad Luz UV 
+
+Nombre: Guva-s12s 
+
+### Sensor de humedad y temperatura
+
+Nombre: AHT10
+
+### Sensor de presion atmosferica
+
+Nombre: BMP280
+
+### Sensor efecto Hall
+
+Nombre: A3144
+
+### Adaptador de nivel logico 
+
+Nombre: CJMCU 0108
+
+### Pantalla OLED
+
+Nombre: SSH1106
+
+### Bateria
+
+Nombre: Power bank 5000 mAh
 
