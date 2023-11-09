@@ -242,3 +242,9 @@ Posee al menos una salida USB para alimentar los dispositivos móviles que desee
 - Capacidad: 5000mAh.
 - Leds indicadores.
 
+## Desarrollo teorico y practico:
+
+### Desarrollo teorico:
+### Etapa 1: Investigacion:
+Descripcion:
+Durante esta etapa nos dedicamoa a la investigacion y busqueda de algunas estaciones metereologicas, entre ellas vimos propuestas de escala industrial, proyectos escolares y proyectos caseros. Durante este proceso obtuvimos informacion sobre microcontroladores, sensores, tecnologias en la nube, lenguajes de programacion, etc.  
