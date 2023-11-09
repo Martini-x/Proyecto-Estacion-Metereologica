@@ -66,6 +66,7 @@ Estas mejoras podrían hacer que la pequeña estación meteorológica sea aún m
 
 
 ### *Diagrama de bloques:
+
 ![Diagrama de bloques](images/diagramaenblanco.png)
 
 - Sensores:
@@ -88,6 +89,7 @@ Estas mejoras podrían hacer que la pequeña estación meteorológica sea aún m
 ### Microcontrolador
 
 Nombre: ESP32 - Wi-Fi & Bluetooth MCU
+
 ![ESP32](images/esp32.png)
 
 Descripcion: 
@@ -115,6 +117,7 @@ SRAM
 ### Sensor Intensidad Luz UV 
 
 Nombre: Guva-s12s 
+
 ![guva12s](images/guva12s.png)
 
 Descripcion: 
@@ -158,7 +161,9 @@ Especificaciones:
 ### Sensor de presion atmosferica
 
 Nombre: BMP280
+
 ![bmp280](images/bmp280.png)
+
 Desscripcion:
 El sensor de presión barométrica BMP280 permite medir la altura respecto al nivel del mar, su funcionamiento está basado en la relación entre presión del aire y la altitud. El BMP280  es la evolución del BMP180, posee alta precisión y un bajo consumo de energía. El BMP280 ofrece un rango de medición de 300 a 1100 hPa (Hecto Pascal). Basado en tecnología BOSCH piezo-resistiva con gran robustez EMC, alta precisión y linealidad, así como con estabilidad a largo plazo. Se ha diseñado para ser conectado directamente a un microcontrolador a través de I2C o SPI. El sensor BMP280 presenta diversas mejoras respecto al sensor BMP180 como: Mejor resolución de presión y temperatura, mejor precisión, mejores filtros digitales y un menor consumo de energía.
 
@@ -178,6 +183,7 @@ Especificaciones:
 ### Sensor efecto Hall
 
 Nombre: A3144
+
 ![A3144](images/a3144.png)
 
 Descripcion:
@@ -195,7 +201,9 @@ Especificaciones:
 ### Adaptador de nivel logico 
 
 Nombre: CJMCU 0108
+
 ![CJMCU0108](images/CJMCU0108.png)
+
 Descripcion:
 Convertidor de nivel lógico bidireccional, puede realizar una conexión entre dispositivos que operan a diferentes voltajes. Funciona con configuraciones de drenaje abierto y push-pull. Este traductor de 8 bits utiliza dos rieles de fuente de alimentación configurables separados. El puerto A rastrea el voltaje de suministro del pin VA (VCCA). El pin VA acepta cualquier voltaje de suministro entre 1,2 V y 3,6 V. El puerto B rastrea el voltaje de suministro del pin VB (VCCB). El pin VB acepta cualquier voltaje de suministro entre 1,65 V y 5,5 V.
 
@@ -213,7 +221,9 @@ Especificaciones:
 ### Pantalla OLED
 
 Nombre: SSH1106
+
 ![SSH1106](images/SSH1106.png)
+
 Descripcion:
 Esta pantalla es muy pequeña (1,3 pulgadas de diagonal) pero muy visible dado su alto contraste OLED. Es una pantalla con una matriz de un color de 128x64 puntos. Dado que la pantalla está basada en la tecnología LED, no necesita retroiluminación y tiene un alto contraste incluso a plena luz del día.
 El driver interno es un SH1106 que se comunica por I2C, un protocolo muy rápido ideal apra éste tipo de pantallas. Internamente todo el conjunto funciona a 3,3V pero se han acoplado tanto la alimentación como los pines de entrada para funcionar perfectamente a 5V lo que lo hace ideal para utilizar con nuestro microcontrolador favorito de 5V
@@ -234,7 +244,9 @@ Especificaciones:
 ### Bateria
 
 Nombre: Power bank 5000 mAh
+
 ![powerbank](images/powerbank.png)
+
 Caracteristicas:
 El power bank básicamente es una batería de litio controlado por un microchip, de manera que detecta el dispositivo conectado y le suministra la corriente necesaria que admite dicho dispositivo. Dispone de circuitos de protección contra sobreintensidad y cortocircuito de manera que no tendremos que preocuparnos por si el dispositivo sufrirá daños. No obstante, se recomienda utilizar modelos certificados por el organismo de control pertinente.
 El power bank cuenta como mínimo con un puerto de entrada microUSB que se utiliza para recargar el powerbank. Algunos power bank cuentan con placas solares integradas, para recargar sus baterías.
@@ -256,14 +268,17 @@ Descripcion:
 Durante esta etapa visualizamos las tareas a realizar y nos las repartimos, ademas de plantear diagramas generales sobre la composicion del proyecto para tener dimensionado como iban a ir las piezas del mismo.
 
 Diagrama de Gantt que usamos para reparticion de tareas:
+
 ![Diagrama-de-Gantt-básico](images/diagramadegantt.png)
 
 Diagrama de bloques sobre el proyecto:
+
 ![Diagrama-en-blanco](images/diagramaenblanco.png)
 
 ### Etapa 3: Diagramas:
 Descripcion:
 Durante esta etapa realizamos los diagramas electricos en KiCad (sch) con fuente de alimentacon, sensores, pantalla y microcontrolador. Esto lo hicimos con el fin de poder tener un soporte a la hora de armar circuitos para probarlos.
+
 ![SCH](images/sch.png)
 
 ### Prueba de componentes:
