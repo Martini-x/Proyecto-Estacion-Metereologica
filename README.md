@@ -213,9 +213,32 @@ Especificaciones:
 Nombre: SSH1106
 ![SSH1106](images/SSH1106.png)
 Descripcion:
-
+Esta pantalla es muy pequeña (1,3 pulgadas de diagonal) pero muy visible dado su alto contraste OLED. Es una pantalla con una matriz de un color de 128x64 puntos. Dado que la pantalla está basada en la tecnología LED, no necesita retroiluminación y tiene un alto contraste incluso a plena luz del día.
+El driver interno es un SH1106 que se comunica por I2C, un protocolo muy rápido ideal apra éste tipo de pantallas. Internamente todo el conjunto funciona a 3,3V pero se han acoplado tanto la alimentación como los pines de entrada para funcionar perfectamente a 5V lo que lo hace ideal para utilizar con nuestro microcontrolador favorito de 5V
 Especificaciones:
+- Pantalla OLED de alto contraste
+- Color Emision: Azul
+- Resolución: 128x64 píxeles
+- Controlador Interno: SH1106
+- Interfaz I2C
+- Angulo de visión: >160º
+- Alimentación: 3 a 5V DC
+- Consumo con todos sus pixeles encendidos: 80mA
+- Dimesiones: 35mm x 25mm
+- Dimensiones PCB: 35.5mm x 33.7mm
+- Peso: 6g
+- Orden de Pines: GND,VCC
+- Temepratura de funcionamiento: -30 a +70 ºC
 ### Bateria
 
 Nombre: Power bank 5000 mAh
+
+Caracteristicas:
+El power bank básicamente es una batería de litio controlado por un microchip, de manera que detecta el dispositivo conectado y le suministra la corriente necesaria que admite dicho dispositivo. Dispone de circuitos de protección contra sobreintensidad y cortocircuito de manera que no tendremos que preocuparnos por si el dispositivo sufrirá daños. No obstante, se recomienda utilizar modelos certificados por el organismo de control pertinente.
+El power bank cuenta como mínimo con un puerto de entrada microUSB que se utiliza para recargar el powerbank. Algunos power bank cuentan con placas solares integradas, para recargar sus baterías.
+Posee al menos una salida USB para alimentar los dispositivos móviles que deseemos recargar. Puede disponer de más de una salida USB permitiendo la recarga simultánea de varios dispositivos.
+- Entrada: 5V micro USB
+- Salida micro USB 5V 1A
+- Capacidad: 5000mAh.
+- Leds indicadores.
 
