@@ -254,6 +254,7 @@ Descripcion:
 Durante esta etapa visualizamos las tareas a realizar y nos las repartimos, ademas de plantear diagramas generales sobre la composicion del proyecto para tener dimensionado como iban a ir las piezas del mismo.
 
 Diagrama de Gantt que usamos para reparticion de tareas:
-![Diagrama-de-Gantt-básico](diagramadegantt.png)
+![Diagrama-de-Gantt-básico](images/diagramadegantt.png)
+
 Diagrama de bloques sobre el proyecto:
-![Diagrama-en-blanco](diagramaenblanco.png)
+![Diagrama-en-blanco](images/diagramaenblanco.png)
