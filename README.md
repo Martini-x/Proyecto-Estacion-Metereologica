@@ -247,4 +247,11 @@ Posee al menos una salida USB para alimentar los dispositivos móviles que desee
 ### Desarrollo teorico:
 ### Etapa 1: Investigacion:
 Descripcion:
-Durante esta etapa nos dedicamoa a la investigacion y busqueda de algunas estaciones metereologicas, entre ellas vimos propuestas de escala industrial, proyectos escolares y proyectos caseros. Durante este proceso obtuvimos informacion sobre microcontroladores, sensores, tecnologias en la nube, lenguajes de programacion, etc.  
+Durante esta etapa nos dedicamoa a la investigacion y busqueda de algunas estaciones metereologicas, entre ellas vimos propuestas de escala industrial, proyectos escolares y proyectos caseros. Durante este proceso obtuvimos informacion sobre microcontroladores, sensores, tecnologias en la nube, lenguajes de programacion, etc. En este proceso tomamos decisiones sobre gran cantidad de componentes y tecnologias que ibamos a usar durante el proyecto.
+
+### Etapa 2: Planificacion:
+Descripcion:
+Durante esta etapa visualizamos las tareas a realizar y nos las repartimos, ademas de plantear diagramas generales sobre la composicion del proyecto para tener dimensionado como iban a ir las piezas del mismo.
+
+Diagrama de Gantt que usamos para reparticion de tareas
+![]
