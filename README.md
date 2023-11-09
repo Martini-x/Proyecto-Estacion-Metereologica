@@ -66,7 +66,7 @@ Estas mejoras podrían hacer que la pequeña estación meteorológica sea aún m
 
 
 ### *Diagrama de bloques:
-![Diagrama de bloques](images/Diagrama-en-blanco.png)
+![Diagrama de bloques](images/diagramaenblanco.png)
 
 - Sensores:
   - Temperatura y Humedad: Estas dos variables seran medidas por un mismo sensor en tiempo real. (Htu21d)
