@@ -258,3 +258,40 @@ Diagrama de Gantt que usamos para reparticion de tareas:
 
 Diagrama de bloques sobre el proyecto:
 ![Diagrama-en-blanco](images/diagramaenblanco.png)
+
+### Etapa 3: Diagramas:
+Descripcion:
+Durante esta etapa realizamos los diagramas electricos en KiCad (sch) con fuente de alimentacon, sensores, pantalla y microcontrolador. Esto lo hicimos con el fin de poder tener un soporte a la hora de armar circuitos para probarlos.
+![SCH](images/sch.png)
+
+### Prueba de componentes:
+
+Descripcion:
+En esta etapa realizamos prueba de todos los componentes por separado para ver el funcionamiento de cada uno para leugo poder juntarlos en un solo codigo. Probamos todos los sensores, la pantalla y la comunicacion Wifi con la nube para poder enviar datos.
+Codigos de prueba:
+AHT10:
+C
+"""
+
+import utime
+from machine import Pin, I2C
+
+import ahtx0
+
+# I2C for the Wemos D1 Mini with ESP8266
+i2c = I2C(scl=Pin(22), sda=Pin(21))
+
+# Create the sensor object using I2C
+sensor = ahtx0.AHT10(i2c)
+
+while True:
+    print("\nTemperature: %0.2f C" % sensor.temperature)
+    print("Humidity: %0.2f %%" % sensor.relative_humidity)
+    utime.sleep(5)
+"""
+BMP280:
+GUVA S12SD:
+OLED:
+VELETA:
+ANEMOMETRO:
+PLUVIOMETRO:
