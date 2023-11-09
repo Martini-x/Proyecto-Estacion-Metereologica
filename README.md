@@ -289,8 +289,214 @@ while True:
     utime.sleep(5)
 ```
 BMP280:
+```python
+from machine import Pin, I2C
+from time import sleep
+import BME280
+
+
+i2c = I2C(scl=Pin(22), sda=Pin(21), freq=10000)
+
+
+while True:
+  bme = BME280.BME280(i2c=i2c)
+  temp = bme.temperature
+
+  pres = bme.pressure
+  
+  print('Temperature: ', temp)
+  print('Pressure: ', pres)
+
+  sleep(5)
+```
 GUVA S12SD:
+```python
+import machine
+import time
+
+# Define the analog pin connected to the sensor output
+sensor_pin = machine.Pin(36)  # GPIO 32 is also ADC1_4
+
+# Initialize the ADC
+adc = machine.ADC(sensor_pin)
+
+# Function to read UV intensity
+def read_uv_intensity():
+    uv_values = []
+    for _ in range(10):  # Take 10 readings and average them
+        uv_values.append(adc.read())
+        time.sleep_ms(10)  # Wait for 10 milliseconds between readings
+    return sum(uv_values) / len(uv_values)  # Return the average
+
+while True:
+    uv_value = read_uv_intensity()
+    voltage = uv_value/4095*3.3
+    voltage_mV= voltage*1000
+    print("UV Intensity:", uv_value)
+    print("V:", voltage)
+    time.sleep(1)  # Sleep for 1 second before the next reading
+    
+    if(voltage_mV<50):
+        print("UV_SCALE: 0")
+    elif(voltage_mV>=50 and voltage_mV<227):
+        print("UV_SCALE: 1")
+    elif(voltage_mV>=227 and voltage_mV<318):
+        print("UV_SCALE: 2")
+    elif(voltage_mV>=318 and voltage_mV<408):
+        print("UV_SCALE: 3")
+    elif(voltage_mV>=408 and voltage_mV<503):
+        print("UV_SCALE: 4")
+    elif(voltage_mV>=503 and voltage_mV<606):
+        print("UV_SCALE: 5")
+    elif(voltage_mV>=606 and voltage_mV<696):
+        print("UV_SCALE: 6")
+    elif(voltage_mV>=696 and voltage_mV<795):
+        print("UV_SCALE: 7")
+    elif(voltage_mV>=795 and voltage_mV<881):
+        print("UV_SCALE: 8")
+    elif(voltage_mV>=881 and voltage_mV<976):
+        print("UV_SCALE: 9")
+    elif(voltage_mV>=976 and voltage_mV<1079):
+        print("UV_SCALE: 10")
+    elif(voltage_mV>=1079):
+        print("UV_SCALE: 11")
+
+
+```
 OLED:
+```python
+# More details can be found in TechToTinker.blogspot.com 
+# George Bantique | tech.to.tinker@gmail.com
+
+from machine import Pin, I2C
+from sh1106 import SH1106_I2C
+import freesans20
+from writer_minimal import Writer
+from machine import RTC 
+from time import sleep_ms
+
+i2c = I2C(scl=Pin(22), sda=Pin(21), freq=400000) 
+oled = SH1106_I2C(128, 64, i2c, None, addr=0x3C)
+font_writer = Writer(oled, freesans20)
+
+rtc = RTC() 
+rtc.datetime((2023, 8, 31, 4, 10, 54, 0, 0)) 
+# rtc.datetime((YYYY, MM, DD, WD, HH, MM, SS, MS)) 
+# WD 1 = Monday 
+# WD 7 = Sunday 
+isPoint = True
+
+while True: 
+    t = rtc.datetime() 
+    oled.fill(0) 
+    oled.text('** 1.3 OLED **', 10, 0) 
+    # Display the date
+    font_writer.set_textpos(20, 15)
+    font_writer.printstring('{}-{:02d}-{:02d}' .format(t[0],t[1],t[2]))
+    if isPoint: 
+        colon = ':' 
+    else: 
+        colon = ' '
+    # Display the time
+    font_writer.set_textpos(40, 40)
+    font_writer.printstring('{:02d}{}{:02d}' .format(t[4], colon, t[5]))
+    
+    oled.show() 
+    sleep_ms(500) 
+    isPoint = not isPoint
+```
 VELETA:
+```python
+import machine
+import utime
+
+sensor_norte = machine.Pin(25, machine.Pin.IN)
+sensor_sur = machine.Pin(26, machine.Pin.IN)
+sensor_este = machine.Pin(27, machine.Pin.IN)
+sensor_oeste = machine.Pin(14, machine.Pin.IN)
+
+while True:
+    norte = sensor_norte.value()
+    sur = sensor_sur.value()
+    este = sensor_este.value()
+    oeste = sensor_oeste.value()
+
+    if norte and este:
+        print("Noreste")
+    elif norte and oeste:
+        print("Noroeste")
+    elif sur and este:
+        print("Sureste")
+    elif sur and oeste:
+        print("Suroeste")
+    elif norte:
+        print("Norte")
+    elif sur:
+        print("Sur")
+    elif este:
+        print("Este")
+    elif oeste:
+        print("Oeste")
+    utime.sleep(0.1)  # Pequeña pausa para evitar repeticiones rápidas
+```
 ANEMOMETRO:
+```python
+from machine import Pin
+import utime
+import math
+
+# Configura el pin del sensor de efecto Hall
+hall_sensor_pin = Pin(14, Pin.IN)
+
+# Inicializa variables
+last_time = None  # Inicializa la variable para el primer toque
+
+def button_handler(pin):
+    global last_time
+    current_time = utime.ticks_ms()  # Registra la marca de tiempo actual
+    if last_time is not None:
+        interval = (current_time - last_time) / 1000  # Calcula el intervalo entre toques
+        print("Intervalo entre toques (s):", interval)
+
+        # Calcula la velocidad angular en radianes por segundo
+        velocidad_angular_rad_s = 2 * math.pi / interval
+        velocidad_km = (0.023 * velocidad_angular_rad_s) * 3.6
+        print("Velocidad (km/h):", velocidad_km)
+
+    last_time = current_time  # Actualiza la marca de tiempo
+
+try:
+    button_pin = Pin(14, Pin.IN)  # Assuming you have a button connected to Pin 0
+    button_pin.irq(trigger=Pin.IRQ_FALLING, handler=button_handler)
+
+    while True:
+        utime.sleep(1)  # Espera 1 segundo
+
+except KeyboardInterrupt:
+    button_pin.irq(handler=None)  # Detiene la interrupción al salir del programa
+    print("Programa detenido")
+```
 PLUVIOMETRO:
+```python
+import machine
+
+# Declaración de variables
+mmPerPulse = 0.173
+mmTotal = 0
+
+# Función de manejo de interrupción
+def handle_interrupt(pin):
+    global mmTotal
+    mmTotal += mmPerPulse
+    print(mmTotal, "mm")
+
+# Configurar el pin del sensor como entrada para la interrupción
+sensor = machine.Pin(14, machine.Pin.IN)
+
+# Configurar la interrupción en el flanco de subida del pin
+sensor.irq(trigger=machine.Pin.IRQ_RISING | machine.Pin.IRQ_FALLING, handler=handle_interrupt)
+
+# Bucle principal
+while True:
+    pass
+```
