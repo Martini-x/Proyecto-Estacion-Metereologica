@@ -270,8 +270,8 @@ Descripcion:
 En esta etapa realizamos prueba de todos los componentes por separado para ver el funcionamiento de cada uno para leugo poder juntarlos en un solo codigo. Probamos todos los sensores, la pantalla y la comunicacion Wifi con la nube para poder enviar datos.
 Codigos de prueba:
 AHT10:
-C
-"""
+
+"""C
 
 import utime
 from machine import Pin, I2C
