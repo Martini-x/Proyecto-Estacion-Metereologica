@@ -232,7 +232,7 @@ Especificaciones:
 ### Bateria
 
 Nombre: Power bank 5000 mAh
-
+![powerbank](images/powerbank.png)
 Caracteristicas:
 El power bank básicamente es una batería de litio controlado por un microchip, de manera que detecta el dispositivo conectado y le suministra la corriente necesaria que admite dicho dispositivo. Dispone de circuitos de protección contra sobreintensidad y cortocircuito de manera que no tendremos que preocuparnos por si el dispositivo sufrirá daños. No obstante, se recomienda utilizar modelos certificados por el organismo de control pertinente.
 El power bank cuenta como mínimo con un puerto de entrada microUSB que se utiliza para recargar el powerbank. Algunos power bank cuentan con placas solares integradas, para recargar sus baterías.
