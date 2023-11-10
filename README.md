@@ -682,3 +682,8 @@ El proyecto es interesante para poder aprender principalmente sobre la comunicac
 
 # Aclaracion
 ## El proyecto al 10/11 (dia de publicacion de informe y presentacion) aun no está al 100%, nos quedarias por terminar las siguentes cosas:
+- Creacion del PCB en fisico
+- Poner sensores de efecto hall unipolares para la veleta
+- Crear estructura que soporte a toda la estacion metereologica, elementos de medicion y caja en la que ira el microcontrolador-SHIELD, powerbank y OLED
+- Diseñar y crear caja en la que ira el microcontrolador-SHIELD, powerbank y OLED
+- Ajustes en el wifi (codigo)
