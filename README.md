@@ -678,3 +678,7 @@ A continuacion explicaremos los diseños y como funcionan:
 ### Conclusion:
 
 El proyecto es interesante para poder aprender principalmente sobre la comunicacion WIFI de datos, ya que la recopilacion de los mismos no es muy dificil gracias a las librerias proveidas por los fabricantes. A lo largo de este proyecto pudimos aplicar saberes previos que teniamos sobre electronica y programacion, pero ademas aprendimos cosas nuevas como por ejemplo el uso de microPython, ya que decidimos programar nuestra ESP32 con ese lenguaje para aprender algo nuevo adeamas de el C++ de Arduino, el uso de la intergaz I2C, el uso de el wifi en ESP, uso de servicios en la nube como Thinkspeak, uso de nuevos sensores, entre otras cosas ademas.
+
+
+# Aclaracion
+## El proyecto al 10/11 (dia de publicacion de informe y presentacion) aun no está al 100%, nos quedarias por terminar las siguentes cosas:
