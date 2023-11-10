@@ -281,17 +281,15 @@ Durante esta etapa realizamos los diagramas electricos en KiCad (sch) con fuente
 
 ![SCH](images/sch.png)
 
-### Prueba de componentes:
+### Etapa 4: Prueba de componentes:
 
 Descripcion:
 En esta etapa realizamos prueba de todos los componentes por separado para ver el funcionamiento de cada uno para leugo poder juntarlos en un solo codigo. Probamos todos los sensores, la pantalla y la comunicacion Wifi con la nube para poder enviar datos.
 Codigos de prueba:
 AHT10:
 ```python
-
 import utime
 from machine import Pin, I2C
-
 import ahtx0
 
 # I2C for the Wemos D1 Mini with ESP8266
@@ -305,25 +303,21 @@ while True:
     print("Humidity: %0.2f %%" % sensor.relative_humidity)
     utime.sleep(5)
 ```
+
 BMP280:
 ```python
 from machine import Pin, I2C
 from time import sleep
 import BME280
 
-
 i2c = I2C(scl=Pin(22), sda=Pin(21), freq=10000)
-
 
 while True:
   bme = BME280.BME280(i2c=i2c)
   temp = bme.temperature
-
   pres = bme.pressure
-  
   print('Temperature: ', temp)
   print('Pressure: ', pres)
-
   sleep(5)
 ```
 GUVA S12SD:
@@ -331,19 +325,18 @@ GUVA S12SD:
 import machine
 import time
 
-# Define the analog pin connected to the sensor output
-sensor_pin = machine.Pin(36)  # GPIO 32 is also ADC1_4
+sensor_pin = machine.Pin(36) 
 
-# Initialize the ADC
+# Inicializa el ADC
 adc = machine.ADC(sensor_pin)
 
-# Function to read UV intensity
+# Funcion para leer la intensidad UV
 def read_uv_intensity():
     uv_values = []
-    for _ in range(10):  # Take 10 readings and average them
+    for _ in range(10):  # Toma 10 datos y los promedia
         uv_values.append(adc.read())
-        time.sleep_ms(10)  # Wait for 10 milliseconds between readings
-    return sum(uv_values) / len(uv_values)  # Return the average
+        time.sleep_ms(10)  
+    return sum(uv_values) / len(uv_values)  # Devuelve el promedio
 
 while True:
     uv_value = read_uv_intensity()
@@ -351,7 +344,7 @@ while True:
     voltage_mV= voltage*1000
     print("UV Intensity:", uv_value)
     print("V:", voltage)
-    time.sleep(1)  # Sleep for 1 second before the next reading
+    time.sleep(1)  
     
     if(voltage_mV<50):
         print("UV_SCALE: 0")
@@ -377,14 +370,9 @@ while True:
         print("UV_SCALE: 10")
     elif(voltage_mV>=1079):
         print("UV_SCALE: 11")
-
-
 ```
 OLED:
 ```python
-# More details can be found in TechToTinker.blogspot.com 
-# George Bantique | tech.to.tinker@gmail.com
-
 from machine import Pin, I2C
 from sh1106 import SH1106_I2C
 import freesans20
@@ -417,7 +405,6 @@ while True:
     # Display the time
     font_writer.set_textpos(40, 40)
     font_writer.printstring('{:02d}{}{:02d}' .format(t[4], colon, t[5]))
-    
     oled.show() 
     sleep_ms(500) 
     isPoint = not isPoint
@@ -437,7 +424,6 @@ while True:
     sur = sensor_sur.value()
     este = sensor_este.value()
     oeste = sensor_oeste.value()
-
     if norte and este:
         print("Noreste")
     elif norte and oeste:
@@ -483,15 +469,12 @@ def button_handler(pin):
     last_time = current_time  # Actualiza la marca de tiempo
 
 try:
-    button_pin = Pin(14, Pin.IN)  # Assuming you have a button connected to Pin 0
+    button_pin = Pin(14, Pin.IN) 
     button_pin.irq(trigger=Pin.IRQ_FALLING, handler=button_handler)
 
+    # Bucle principal
     while True:
-        utime.sleep(1)  # Espera 1 segundo
-
-except KeyboardInterrupt:
-    button_pin.irq(handler=None)  # Detiene la interrupción al salir del programa
-    print("Programa detenido")
+        pass
 ```
 PLUVIOMETRO:
 ```python
@@ -517,3 +500,157 @@ sensor.irq(trigger=machine.Pin.IRQ_RISING | machine.Pin.IRQ_FALLING, handler=han
 while True:
     pass
 ```
+
+### Etapa 5: Prueba de componentes en conjunto + WIFI
+
+Al llegar a esta etapa ya tenemos a todos los componentes funcionando por individual con sus respectivos codigos, en esta etapa nos encargamos de juntar todo en un mismo codigo, haciendo que puedan darse la recopilacion de datos y que los mismos se puedan mostrar en la pantalla OLED, luego nos encargamos de poder enviarlo mediante conexion WIFI a un servidor en la nube, como servicio en la nube usamos Thingspeak, este servicio nos permite mandar los datos de forma facil y rapido, ademas de poder verlos en "tiempo real" desde su pagina web, la unica limitacion del servicio es que el intervalo entre recepcion de datos al server es de 15s, el mismo puede ser en tiempo real al pagar un adicional.
+
+```python
+import machine, network, time, urequests
+from machine import Pin, I2C
+from sh1106 import SH1106_I2C
+import ahtx0
+import BME280
+import machine
+import utime
+import math
+
+ssid = 'BA Escuela'
+password = ''
+url = "https://api.thingspeak.com/update?api_key=06BZMYMBYQIQ02XG"
+
+red = network.WLAN(network.STA_IF)
+
+red.active(True)
+red.connect(ssid, password)
+
+while red.isconnected() == False:
+  pass
+
+print('Conexión correcta')
+print(red.ifconfig())
+
+ultima_peticion = 0
+intervalo_peticiones = 1
+
+i2c = I2C(scl=Pin(22), sda=Pin(21), freq=400000)  # Configura el bus I2C en los mismos pines para ambos dispositivos.
+
+
+
+sensor_pin = machine.Pin(36) 
+# Initialize the ADC
+adc = machine.ADC(sensor_pin)
+# Configura el display OLED
+oled = SH1106_I2C(128, 64, i2c)
+
+# Direcciones I2C de los dispositivos
+sensor_address = 0x38
+oled_address=0x3C
+BME280_I2CADDR = 0x76
+
+hall_sensor_pin = Pin(14, Pin.IN)
+last_time = None
+
+def button_handler(pin):
+    global last_time
+    current_time = utime.ticks_ms()  # Registra la marca de tiempo actual
+    if last_time is not None:
+        interval = (current_time - last_time) / 1000  # Calcula el intervalo entre toques
+        velocidad_angular_rad_s = 2 * math.pi / interval
+        velocidad_km = (0.023 * velocidad_angular_rad_s) * 3.6
+        last_time = current_time  # Actualiza la marca de tiempo
+    return velocidad_km
+    
+def read_uv_intensity():
+    uv_values = []
+    for _ in range(10):  # Take 10 readings and average them
+        uv_values.append(adc.read())
+        time.sleep_ms(10)  # Wait for 10 milliseconds between readings
+    return sum(uv_values) / len(uv_values)  # Return the average
+
+def Escala_UV(voltage_mV):
+    if(voltage_mV<50):
+        Escala = 0
+    elif(voltage_mV>=50 and voltage_mV<227):
+        Escala = 1
+    elif(voltage_mV>=227 and voltage_mV<318):
+        Escala = 2
+    elif(voltage_mV>=318 and voltage_mV<408):
+        Escala = 3
+    elif(voltage_mV>=408 and voltage_mV<503):
+        Escala = 4
+    elif(voltage_mV>=503 and voltage_mV<606):
+        Escala = 5
+    elif(voltage_mV>=606 and voltage_mV<696):
+        Escala = 6
+    elif(voltage_mV>=696 and voltage_mV<795):
+        Escala = 7
+    elif(voltage_mV>=795 and voltage_mV<881):
+        Escala = 8
+    elif(voltage_mV>=881 and voltage_mV<976):
+        Escala = 9
+    elif(voltage_mV>=976 and voltage_mV<1079):
+        Escala = 10
+    elif(voltage_mV>=1079):
+        Escala = 11
+    return Escala
+
+def reconectar():
+    print('Fallo de conexión. Reconectando...')
+    time.sleep(10)
+    machine.reset()
+
+while True:
+    uv_value = read_uv_intensity()
+    voltage = uv_value/4095*3.3
+    voltage_mV= voltage*1000
+    # Leer datos del sensor (por ejemplo, 4 bytes)
+    data_received_sensor = bytearray(4)
+    data_received_bme = bytearray(4)
+    # Configura la dirección I2C para el sensor
+
+    i2c.readfrom_into(sensor_address, data_received_sensor)
+    i2c.readfrom_into(BME280_I2CADDR, data_received_bme)
+    # Procesa los datos recibidos según la hoja de datos del sensor
+    # Supongamos que los datos son una temperatura en grados Celsius
+    sensor = ahtx0.AHT10(i2c)
+    bme = BME280.BME280(i2c=i2c)
+    # Borra el contenido anterior del display
+    oled.fill(0)
+    
+
+    # Muestra los datos del sensor en el display OLED
+    mensaje_t = "Temp: {:.2f} C".format(sensor.temperature)
+    oled.text(mensaje_t, 0, 0)
+    mensaje_h = "Humidity: {:.1f} %".format(sensor.relative_humidity)
+    oled.text(mensaje_h, 0, 10)
+    mensaje_p = "Pres: {:.6s} hPa".format(bme.pressure)
+    oled.text(mensaje_p, 0, 20)
+    mensaje_UV = "UV: {:.0f} ".format(uv_value)
+    oled.text(mensaje_UV, 0, 30)
+    mensaje_Escala_UV = "Escala UV: {:.0f} ".format(Escala_UV(voltage_mV))
+    oled.text(mensaje_Escala_UV, 0, 40)
+    mensaje_vel = "Velocidad: {:.0f} km".format(button_handler(pin))
+    oled.text(mensaje_vel, 0, 50)
+
+    # Actualiza el display
+    oled.show()
+    try:
+        if (time.time() - ultima_peticion) > intervalo_peticiones:
+            respuesta = urequests.get(url + "&field1=" + str(sensor.temperature) + "&field2=" + str(sensor.relative_humidity) + "&field3=" + str(bme.pressure) + "&field4=" + str(uv_value) + "&field5=" + str(Escala_UV(voltage_mV)))
+            print ("Respuesta: " + str(respuesta.status_code))
+            respuesta.close ()
+            ultima_peticion = time.time()
+    except OSError as e:
+        reconectar()
+    try:
+        button_pin = Pin(14, Pin.IN)  # Assuming you have a button connected to Pin 0
+        button_pin.irq(trigger=Pin.IRQ_FALLING, handler=button_handler)
+
+
+
+    except KeyboardInterrupt:
+        button_pin.irq(handler=None)  # Detiene la interrupción al salir del programa
+        print("Programa detenido")
+```
+
