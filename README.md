@@ -668,5 +668,9 @@ A continuacion explicaremos los diseños y como funcionan:
 ![WINDVANE](images/WINDVANE.png)
 
 - Pluviometro:
+   El pluviometro ira midiendo la precipitacion de a 1.73ml, el sistema sera parecido a un "sube y baja", y cada vez que se realice un cambio de movimiento, mediante un iman acoplado a la estructura ("Sube y baja") y a un sensor de efecto hall acoplado a una de las paredes internas de la base, se iran contando la cantidad de veces que esto suceda, de manera que para obtener la cantidad de lluvia caida se multiplicaran la (cantidad de veces que el iman paso frente a sensor) * (1,73). 
 ![RAINGAUGE](images/RAINGAUGE.png)
+
+- Stevenson screen:
+  La stenvenson screen nos servira para poder proteger el sensor UV y el sensor de humedad y temperatura de la lluvia, polvo, hojas, ademas de otras variables de el entorno que puedan ser contrarestantes para el optimo funcionamiento de dichos sensores. Ambos sensores iran dentro de la Stevenson screen y acoplados a la base.
 ![STEVENSONSCREEN](images/STEVENSONSCREEN.png)
