@@ -658,7 +658,15 @@ while True:
 
 En esta etapa procedimos por diseñar e imprimir todo lo necesisario para poder crear todo lo necesario para poder poder hacer los instrumentos que miden velocidad del viento (Anemometro), direccion del viento (Veleta), precipitacion (Pluviometro), ademas hicimos la Stevenson Screen que sirve para poder proteger a el sensor de luz UV y el sensor de humedad y temperatura de la lluvia, suciedad, hojas, etc.
 
+A continuacion explicaremos los diseños y como funcionan:
+- Anemometro:
+  El anemometro tiene un sensor de efecto hall acoplado a la parte superior de la base, insertado en un cabidad diseñada para el mismo, ademas tiene un iman acoplado al techo interno de el soporte giratorio a una distancia de ~2cm del centro. El anemometro mide la velocidad del viento a partir de la velocidad de el soporte giratorio, esto lo sabemos gracias a que medimos el intervalo de tiempo entre pasadas de el iman frente al sensor mientras que el soporte giratorio gira.
 ![ANEMOMETER](images/ANEMOMETER.png)
+
+- Veleta:
+  La veleta sirve para medir hacia que direccion apunta el viento, esto lo hacemos poniendo 4 sensores de efecto hall en la parte superior de la base, los mismos los ponemos apuntando hacia los 4 principales puntos cardinales (Norte, Sur , Este y Oeste), ademas ponemos un iman en el techo interior de el soporte giratorio. Para medir la direccion de el viento hacemos lo siguiente, a medida de que el soporte rota, iman se va a posicionar sobre un sensor o entre dos, de esta manera cada vez que el iman esté solamento sobre uno de los sensores va a marcar uno de los 4 principales puntos cardinales y cuando el iman esté entre dos sensores va a marcar uno de los 4 puntos cardinales intermedios (Noreste, Sureste, Suroeste y Noroeste).
 ![WINDVANE](images/WINDVANE.png)
+
+- Pluviometro:
 ![RAINGAUGE](images/RAINGAUGE.png)
 ![STEVENSONSCREEN](images/STEVENSONSCREEN.png)
