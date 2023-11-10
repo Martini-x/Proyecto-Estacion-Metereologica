@@ -654,3 +654,4 @@ while True:
         print("Programa detenido")
 ```
 
+### Etapa 6: Diseño e impresion en 3D
