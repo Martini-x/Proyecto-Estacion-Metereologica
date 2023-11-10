@@ -658,7 +658,7 @@ while True:
 
 En esta etapa procedimos por diseñar e imprimir todo lo necesisario para poder crear todo lo necesario para poder poder hacer los instrumentos que miden velocidad del viento (Anemometro), direccion del viento (Veleta), precipitacion (Pluviometro), ademas hicimos la Stevenson Screen que sirve para poder proteger a el sensor de luz UV y el sensor de humedad y temperatura de la lluvia, suciedad, hojas, etc.
 
-![ANEMOMETER](ANEMOMETER.png)
-![WINDVANE](WINDVANE.png)
-![RAINGAUGE](RAINGAUGE.png)
-![STEVENSONSCREEN](STEVENSONSCREEN.png)
+![ANEMOMETER](images/ANEMOMETER.png)
+![WINDVANE](images/WINDVANE.png)
+![RAINGAUGE](images/RAINGAUGE.png)
+![STEVENSONSCREEN](images/STEVENSONSCREEN.png)
