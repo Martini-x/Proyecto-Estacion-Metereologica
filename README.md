@@ -5,7 +5,8 @@
 - Ignacio D'Amore
 - Nahuel Maldonado
 - Germán Santoandré
-## Tutor: - Ignacio D'Amore
+## Tutor: 
+- Ignacio D'Amore
 # Informe: Estacion metereologica | Martin Sanchez || Thomas Acosta 
 
 ## Indice
