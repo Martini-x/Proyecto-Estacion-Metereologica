@@ -680,7 +680,7 @@ A continuacion explicaremos los diseños y como funcionan:
   La stenvenson screen nos servira para poder proteger el sensor UV y el sensor de humedad y temperatura de la lluvia, polvo, hojas, ademas de otras variables de el entorno que puedan ser contrarestantes para el optimo funcionamiento de dichos sensores. Ambos sensores iran dentro de la Stevenson screen (ya que los platos son circunferecia con huevo en el centro) y acoplados a la base.
 ![STEVENSONSCREEN](images/STEVENSONSCREEN.png)
 
-### Conclusion:
+# Conclusion:
 
 El proyecto es interesante para poder aprender principalmente sobre la comunicacion WIFI de datos, ya que la recopilacion de los mismos no es muy dificil gracias a las librerias proveidas por los fabricantes. A lo largo de este proyecto pudimos aplicar saberes previos que teniamos sobre electronica y programacion, pero ademas aprendimos cosas nuevas como por ejemplo el uso de microPython, ya que decidimos programar nuestra ESP32 con ese lenguaje para aprender algo nuevo adeamas de el C++ de Arduino, el uso de la intergaz I2C, el uso de el wifi en ESP, uso de servicios en la nube como Thinkspeak, uso de nuevos sensores, entre otras cosas ademas.
 
