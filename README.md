@@ -11,6 +11,7 @@
 
 ## Indice
 - [Descripcion del proyecto](#Descripcion-del-proyecto)
+    - [Descripcion de la problematica](Descripcion-de-la-problematica)
 - [Listado de componentes](#Listado-de-componentes)
 - [Desarrollo teorico y practico](#Desarrollo-teorico-y-practico)
 - [Conclusion](#Conclusion)
