@@ -12,8 +12,24 @@
 ## Indice
 - [Descripcion del proyecto](#Descripcion-del-proyecto)
     - [Descripcion de la problematica](#Descripcion-de-la-problematica)
+    - [Caracterisiticas del sistema](#Caracterisiticas-del-sistema)
+    - [Diagrama de bloques](#Diagrama-de-bloques)
 - [Listado de componentes](#Listado-de-componentes)
+    - [Microcontrolador](#Microcontrolador)
+    - [Sensor Intensidad Luz UV](#Sensor-Intensidad-Luz-UV)
+    - [Sensor de humedad y temperatura](#Sensor-de-humedad-y-temperatura)
+    - [Sensor de presion atmosferica](#Sensor-de-presion-atmosferica)
+    - [Sensor efecto Hall](#Sensor-efecto-Hall)
+    - [Adaptador de nivel logico](#Adaptador-de-nivel-logico)
+    - [Pantalla OLED](#Pantalla-OLED)
+    - [Bateria](#Bateria)
 - [Desarrollo teorico y practico](#Desarrollo-teorico-y-practico)
+    - [](#Etapa-1): Investigacion:
+Etapa 2: Planificacion:
+Etapa 3: Diagramas:
+Etapa 4: Prueba de componentes:
+Etapa 5: Prueba de componentes en conjunto + WIFI
+Etapa 6: Diseño e impresion en 3D
 - [Conclusion](#Conclusion)
 - [Aclaracion](#Aclaracion)
 
