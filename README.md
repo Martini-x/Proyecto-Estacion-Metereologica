@@ -11,12 +11,11 @@
 
 ## Indice
 - [Descripcion del proyecto](#Descripcion-del-proyecto)
-- [] ()
-- [] ()
-- [] ()
-- [] ()
-- [] ()
-- [] ()
+- [Listado de componentes](#Listado-de-componentes)
+- [Desarrollo teorico y practico](#Desarrollo-teorico-y-practico)
+- [Conclusion](#Conclusion)
+- [Aclaracion](#Aclaracion)
+
 ---
 ## Descripcion del proyecto
 
