@@ -24,7 +24,7 @@
     - [Pantalla OLED](#Pantalla-OLED)
     - [Bateria](#Bateria)
 - [Desarrollo teorico y practico](#Desarrollo-teorico-y-practico)
-    - [Etapa 1: Investigacion](#Etapa-1:-Investigacion)
+    - [Etapa 1: Investigacion](#Etapa-1-Investigacion)
     - [Etapa 2: Planificacion](#Etapa-2:-Planificacion:)
     - [Etapa 3: Diagramas](#Etapa-3:-Diagramas:)
     - [Etapa 4: Prueba de componentes](#Etapa-4:-Prueba-de-componentes:)
