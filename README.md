@@ -320,7 +320,7 @@ import utime
 from machine import Pin, I2C
 import ahtx0
 
-# I2C for the Wemos D1 Mini with ESP8266
+# I2C for the sensor
 i2c = I2C(scl=Pin(22), sda=Pin(21))
 
 # Create the sensor object using I2C
@@ -337,7 +337,7 @@ BMP280:
 from machine import Pin, I2C
 from time import sleep
 import BME280
-
+# I2C for the sensor
 i2c = I2C(scl=Pin(22), sda=Pin(21), freq=10000)
 
 while True:
@@ -368,12 +368,12 @@ def read_uv_intensity():
 
 while True:
     uv_value = read_uv_intensity()
-    voltage = uv_value/4095*3.3
-    voltage_mV= voltage*1000
+    voltage = uv_value/4095*3.3 # pasar de lectura del sensor a salida de tension
+    voltage_mV= voltage*1000 # pasaje de V a mV
     print("UV Intensity:", uv_value)
     print("V:", voltage)
     time.sleep(1)  
-    
+    # definicion de escalas UV en base a salida de tension del sensor
     if(voltage_mV<50):
         print("UV_SCALE: 0")
     elif(voltage_mV>=50 and voltage_mV<227):
@@ -491,7 +491,7 @@ def button_handler(pin):
 
         # Calcula la velocidad angular en radianes por segundo
         velocidad_angular_rad_s = 2 * math.pi / interval
-        velocidad_km = (0.023 * velocidad_angular_rad_s) * 3.6
+        velocidad_km = (0.023 * velocidad_angular_rad_s) * 3.6 # pasa de rad/s a km/h
         print("Velocidad (km/h):", velocidad_km)
 
     last_time = current_time  # Actualiza la marca de tiempo
