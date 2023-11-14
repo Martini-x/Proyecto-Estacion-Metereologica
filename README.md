@@ -28,7 +28,7 @@
     - [Etapa 2: Planificacion](#Etapa-2-Planificacion)
     - [Etapa 3: Diagramas](#Etapa-3-Diagramas)
     - [Etapa 4: Prueba de componentes](#Etapa-4-Prueba-de-componentes)
-    - [Etapa 5: Prueba de componentes en conjunto + WIFI](#Etapa-5-Prueba-de-componentes-en-conjunto)
+    - [Etapa 5: Prueba de componentes en conjunto + WIFI](#Etapa-5-Prueba-de-componentes-en-conjunto-y-WIFI)
     - [Etapa 6: Diseño e impresion en 3D](#Etapa-6-Diseño-e-impresion-en-3D)
 - [Conclusion](#Conclusion)
 - [Aclaracion](#Aclaracion)
@@ -529,7 +529,7 @@ while True:
     pass
 ```
 
-### Etapa 5: Prueba de componentes en conjunto + WIFI
+### Etapa 5: Prueba de componentes en conjunto y WIFI
 
 Al llegar a esta etapa ya tenemos a todos los componentes funcionando por individual con sus respectivos codigos, en esta etapa nos encargamos de juntar todo en un mismo codigo, haciendo que puedan darse la recopilacion de datos y que los mismos se puedan mostrar en la pantalla OLED, luego nos encargamos de poder enviarlo mediante conexion WIFI a un servidor en la nube, como servicio en la nube usamos Thingspeak, este servicio nos permite mandar los datos de forma facil y rapido, ademas de poder verlos en "tiempo real" desde su pagina web, la unica limitacion del servicio es que el intervalo entre recepcion de datos al server es de 15s, el mismo puede ser en tiempo real al pagar un adicional.
 
