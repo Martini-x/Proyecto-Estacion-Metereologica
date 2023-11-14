@@ -28,7 +28,7 @@
     - [Etapa 2: Planificacion](#Etapa-2-Planificacion)
     - [Etapa 3: Diagramas](#Etapa-3-Diagramas)
     - [Etapa 4: Prueba de componentes](#Etapa-4-Prueba-de-componentes)
-    - [Etapa 5: Prueba de componentes en conjunto + WIFI](#Etapa-5-Prueba)
+    - [Etapa 5: Prueba de componentes en conjunto + WIFI](#Etapa-5-Prueba-de-componentes)
     - [Etapa 6: Diseño e impresion en 3D](#Etapa-6-Diseño-e-impresion-en-3D)
 - [Conclusion](#Conclusion)
 - [Aclaracion](#Aclaracion)
