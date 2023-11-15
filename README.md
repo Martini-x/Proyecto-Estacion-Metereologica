@@ -11,7 +11,7 @@
 
 ## Indice
 - [Descripcion del proyecto](#Descripcion-del-proyecto)
-    - [¿Que es una estación metereologica?](¿Que-es-una-estación-metereologica?)
+    - [¿Que es una estación metereologica?](Que-es-una-estación-metereologica)
     - [Descripcion de la problematica](#Descripcion-de-la-problematica)
     - [Caracterisiticas del sistema](#Caracterisiticas-del-sistema)
     - [Diagrama de bloques](#Diagrama-de-bloques)
