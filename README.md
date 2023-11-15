@@ -11,7 +11,7 @@
 
 ## Indice
 - [Descripcion del proyecto](#Descripcion-del-proyecto)
-    - [¿Que es una estación metereologica?](Que-es-una-estacion-metereologica)
+    - [¿Que es una estación metereologica?](#Que-es-una-estacion-metereologica)
     - [Descripcion de la problematica](#Descripcion-de-la-problematica)
     - [Caracterisiticas del sistema](#Caracterisiticas-del-sistema)
     - [Diagrama de bloques](#Diagrama-de-bloques)
@@ -37,7 +37,8 @@
 ---
 ## Descripcion del proyecto
 
-### *¿Que es una estación metereologica?
+### *¿Que es una estacion metereologica?:
+
 - Una estación meteorológica digital es un dispositivo que recopila y muestra información meteorológica de manera electrónica. Incluye sensores para medir variables como temperatura, humedad, velocidad del viento, dirección del viento, presión atmosférica y precipitación. Estos datos se muestran en una pantalla digital, brindando información actualizada sobre las condiciones meteorológicas locales. Además de permitir la conexión a dispositivos móviles o computadoras para un monitoreo remoto y almacenamiento de datos a largo plazo.
 
 
