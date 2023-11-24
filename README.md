@@ -120,7 +120,18 @@ Estas mejoras podrían hacerla aún más versátil y valiosa para una variedad d
 
 ## Listado de componentes 
 ### Microcontrolador
+Cabe destacar que esta es la primera vez que en nuestro caso se usa una ESP32 en la realizacion de un proyecto, a diferencia de veces anterior en las que usabamos el ARDUINO UNO 
+<div align="center">
 
+ Especificaciones |                       ESP32                      | ARDUINO UNO
+:----:|-------------------------------------------------|---------
+ uProcesador|          ESP32 - Wi-Fi & Bluetooth MCU          |  10 U$D*
+Conectividad|      Sensor Efecto Hall A3144                   | 1.5 U$D*
+ GPIO    |        Sensor Intensidad Luz Ultravioleta       | 6.5 U$D*
+ Memoria   |   Sensor Digital De Humedad Temperatura Htu21d  | 3.5 U$D*
+ Alimentacion    |        Sensor Presion Temperatura Bmp280        |   3 U$D*
+Programacion | |
+</div>
 Nombre: ESP32 - Wi-Fi & Bluetooth MCU
 
 ![ESP32](images/esp32.png)
