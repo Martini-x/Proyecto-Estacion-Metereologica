@@ -720,7 +720,7 @@ A continuacion explicaremos los diseños y como funcionan:
 
 
 ### Etapa 7: PCB:
-En esta etapa se hizo el diseño del PCB ya que sabiamos con claridad como iba a ir todo organizado en el circuito, ya que fuimos haciendo retoques a lo largo del proyecto y decidimos hacer esto por ultimo para no tener que hacer PCB's a medida de que se aplican cambios.
+En esta etapa se hizo el diseño del PCB ya que se sabia con claridad como iba a ir todo organizado en el circuito, ya que se fue haciendo retoques a lo largo del proyecto y se decidio hacer esto por ultimo para no se tenga que hacer PCB's a medida de que se aplican cambios.
 ![PCB](images/PCB.png)
 ![PCB3D](images/PCB3D.png)
 # Conclusion:
