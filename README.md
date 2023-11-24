@@ -705,23 +705,23 @@ A continuacion explicaremos los diseños y como funcionan:
 - Anemometro:
   El anemometro tiene un sensor de efecto hall acoplado a la parte superior de la base, insertado en un cabidad diseñada para el mismo, ademas tiene un iman acoplado al techo interno de el soporte giratorio a una distancia de ~2cm del centro. El anemometro mide la velocidad del viento a partir de la velocidad de el soporte giratorio, esto lo sabemos gracias a que medimos el intervalo de tiempo entre pasadas de el iman frente al sensor mientras que el soporte giratorio gira.
 ![ANEMOMETER](images/ANEMOMETER.png)
-![ANEMOMETRO_FRONTAL](images/ANEMOMETRO_FRONTAL.jpg)
-![ANEMOMETRO_COSTADO](images/ANEMOMETRO_COSTADO.jpg)
-![ANEMOMETRO_SUPERIOR](images/ANEMOMETRO_SUPERIOR.jpg)
+![ANEMOMETRO_FRONTAL](images/ANEMOMETRO_FRONTAL.png)
+![ANEMOMETRO_COSTADO](images/ANEMOMETRO_COSTADO.png)
+![ANEMOMETRO_SUPERIOR](images/ANEMOMETRO_SUPERIOR.png)
 
 - Veleta:
   La veleta sirve para medir hacia que direccion apunta el viento, esto lo hacemos poniendo 4 sensores de efecto hall en la parte superior de la base, los mismos los ponemos apuntando hacia los 4 principales puntos cardinales (Norte, Sur , Este y Oeste), ademas ponemos un iman en el techo interior de el soporte giratorio. Para medir la direccion de el viento hacemos lo siguiente, a medida de que el soporte rota, iman se va a posicionar sobre un sensor o entre dos, de esta manera cada vez que el iman esté solamento sobre uno de los sensores va a marcar uno de los 4 principales puntos cardinales y cuando el iman esté entre dos sensores va a marcar uno de los 4 puntos cardinales intermedios (Noreste, Sureste, Suroeste y Noroeste).
 ![WINDVANE](images/WINDVANE.png)
-![VELETA_FRONTAL](images/VELETA_FRONTAL.jpg)
-![VELETA_COSTADO](images/VELETA_COSTADO.jpg)
-![VELETA_SUPERIOR](images/VELETA_SUPERIOR.jpg)
+![VELETA_FRONTAL](images/VELETA_FRONTAL.png)
+![VELETA_COSTADO](images/VELETA_COSTADO.png)
+![VELETA_SUPERIOR](images/VELETA_SUPERIOR.png)
 
 - Pluviometro:
    El pluviometro ira midiendo la precipitacion de a 1.73ml, el sistema sera parecido a un "sube y baja", la lluvia que caiga sobre el embudo bajara hacia el "sube y baja" y cada vez que se realice un cambio de movimiento, mediante un iman acoplado a la estructura ("Sube y baja") y a un sensor de efecto hall acoplado a una de las paredes internas de la base, se iran contando la cantidad de veces que esto suceda, de manera que para obtener la cantidad de lluvia caida se multiplicaran la (cantidad de veces que el iman paso frente a sensor) * (1,73). 
 ![RAINGAUGE](images/RAINGAUGE.png)
-![PLUVIOMETRO_FRONTAL](images/PLUVIOMETRO_FRONTAL.jpg)
-![PLUVIOMETRO_COSTADO](images/PLUVIOMETRO_COSTADO.jpg)
-![PLUVIOMETRO_SUPERIOR](images/PLUVIOMETRO_SUPERIOR.jpg)
+![PLUVIOMETRO_FRONTAL](images/PLUVIOMETRO_FRONTAL.png)
+![PLUVIOMETRO_COSTADO](images/PLUVIOMETRO_COSTADO.png)
+![PLUVIOMETRO_SUPERIOR](images/PLUVIOMETRO_SUPERIOR.png)
 
 - Stevenson screen:
   La stenvenson screen nos servira para poder proteger el sensor UV y el sensor de humedad y temperatura de la lluvia, polvo, hojas, ademas de otras variables de el entorno que puedan ser contrarestantes para el optimo funcionamiento de dichos sensores. Ambos sensores iran dentro de la Stevenson screen (ya que los platos son circunferecia con huevo en el centro) y acoplados a la base.
