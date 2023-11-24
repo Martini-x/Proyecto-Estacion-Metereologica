@@ -65,36 +65,34 @@ En resumen, una pequeña estación meteorológica puede solucionar problemática
 ---
 
 ### *Caracterisiticas del sistema:
-- Una pequeña estación meteorológica generalmente está diseñada para recopilar datos básicos sobre las condiciones climáticas en una ubicación específica. A continuación, se presentan algunas características comunes de una pequeña estación meteorológica:
+- La pequeña estación meteorológica está diseñada para recopilar datos básicos sobre las condiciones climáticas en una ubicación específica. A continuación, se presentan algunas características comunes de la estación meteorológica:
 
-  - Sensores e instrumentos
+  - Sensores e instrumentos de medicion
 
   - Transmisión de datos
 
-  - Registro y almacenamiento de datos
+  - Registro y almacenamiento de datos en la nube (Formato .CSV)
 
   - Alimentación energética
   
   - Durabilidad y protección
-
-  - Interfaz de usuario
-
+    
   - Conectividad y compatibilidad
 
 
-- Existen varias mejoras que se podrían implementar en una pequeña estación meteorológica para ampliar su funcionalidad y precisión. Algunas de estas mejoras podrían incluir:
+- Existen varias mejoras que se podrían implementar para ampliar su funcionalidad y precisión. Algunas de estas mejoras podrían incluir:
 
     - Sensores adicionales
+      
     - Comunicación mejorada
+      
     - Integración con sistemas de automatización
 
     - Interfaz de usuario avanzada
 
     - Integración con sistemas de alerta temprana
 
-    - Acceso a datos históricos y almacenamiento en la nube
-
-Estas mejoras podrían hacer que la pequeña estación meteorológica sea aún más versátil y valiosa para una variedad de aplicaciones, desde la toma de decisiones en la agricultura y la investigación científica hasta el monitoreo ambiental y la planificación urbana.
+Estas mejoras podrían hacerla aún más versátil y valiosa para una variedad de aplicaciones, desde la toma de decisiones en la agricultura y la investigación científica hasta el monitoreo ambiental y la planificación urbana.
 
 ---
 
