@@ -31,6 +31,7 @@
     - [Etapa 4: Prueba de componentes](#Etapa-4-Prueba-de-componentes)
     - [Etapa 5: Prueba de componentes en conjunto + WIFI](#Etapa-5-Prueba-de-componentes-en-conjunto-y-WIFI)
     - [Etapa 6: Diseño e impresion en 3D](#Etapa-6-Diseño-e-impresion-en-3D)
+    - [Etapa 7: PCB](#Etapa-7:-PCB)
 - [Conclusion](#Conclusion)
 - [Aclaracion](#Aclaracion)
 
