@@ -735,7 +735,7 @@ En esta etapa se hizo el diseño del PCB ya que se sabia con claridad como iba a
 ![PCB3D](images/PCB3D.png)
 # Conclusion:
 
-El proyecto es interesante para poder aprender principalmente sobre la comunicacion WIFI de datos, ya que la recopilacion de los mismos no es muy dificil gracias a las librerias proveidas por los fabricantes. A lo largo de este proyecto pudimos aplicar saberes previos que teniamos sobre electronica y programacion, pero ademas aprendimos cosas nuevas como por ejemplo el uso de microPython, ya que decidimos programar nuestra ESP32 con ese lenguaje para aprender algo nuevo adeamas de el C++ de Arduino, el uso de la intergaz I2C, el uso de el wifi en ESP, uso de servicios en la nube como Thinkspeak, uso de nuevos sensores, entre otras cosas ademas.
+El proyecto es interesante para poder aprender principalmente sobre la comunicacion WIFI de datos, ya que la recopilacion de los mismos no es muy dificil gracias a las librerias proveidas por los fabricantes. A lo largo de este proyecto se pudo aplicar saberes previos que se tenian sobre electronica y programacion, pero ademas se aprendió cosas nuevas como por ejemplo el uso de microPython, ya que se decidió programar nuestra ESP32 con ese lenguaje para aprender algo nuevo adeamas de el C++ de Arduino, el uso del protocolo I2C, el uso de el wifi en ESP, uso de servicios en la nube como Thinkspeak, uso de nuevos sensores, entre otras cosas.
 
 
 # Aclaracion
