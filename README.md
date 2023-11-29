@@ -66,7 +66,7 @@ En resumen, una pequeña estación meteorológica puede solucionar problemática
 ---
 
 ### *Caracterisiticas del sistema:
-- La pequeña estación meteorológica está diseñada para recopilar datos básicos sobre las condiciones climáticas en una ubicación específica. A continuación, se presentan algunas características comunes de la estación meteorológica:
+- La pequeña estación meteorológica está diseñada para recopilar datos básicos sobre las condiciones climáticas en una ubicación específica. A continuación, se presentan algunas características principales de la estación meteorológica:
 
   - Sensores e instrumentos de medicion
 
