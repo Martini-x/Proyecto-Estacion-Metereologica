@@ -707,7 +707,6 @@ A continuacion explicaremos los diseños y como funcionan:
   El anemometro tiene un sensor de efecto hall acoplado a la parte superior de la base, insertado en un cabidad diseñada para el mismo, ademas tiene un iman acoplado al techo interno de el soporte giratorio a una distancia de ~2cm del centro. El anemometro mide la velocidad del viento a partir de la velocidad de el soporte giratorio, esto lo sabemos gracias a que medimos el intervalo de tiempo entre pasadas de el iman frente al sensor mientras que el soporte giratorio gira.
 ![ANEMOMETER](images/ANEMOMETER.png)
 ![ANEMOMETRO_FRONTAL](images/ANEMOMETRO_FRONTAL.png)
-![ANEMOMETRO_COSTADO](images/ANEMOMETRO_COSTADO.png)
 ![ANEMOMETRO_SUPERIOR](images/ANEMOMETRO_SUPERIOR.png)
 
 - Veleta:
