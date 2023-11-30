@@ -759,7 +759,7 @@ while True:
         print("Programa detenido")
 ```
 
-###Plataforma de muestra de datos:
+### Plataforma de muestra de datos:
 
 ![logo](images/logo.png)
 
