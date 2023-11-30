@@ -758,6 +758,11 @@ while True:
         button_pin.irq(handler=None)  # Detiene la interrupción al salir del programa
         print("Programa detenido")
 ```
+Plataforma de muestra de datos:
+
+ThingSpeak es una API y aplicación de código abierto para el Internet de las Cosas que permite almacenar y recopilar datos de objetos conectados a través del protocolo HTTP a través de Internet o de una red local.
+
+Con ThingSpeak, el usuario puede crear aplicaciones de registro de datos de sensores, aplicaciones de seguimiento de ubicación y una red social para los objetos conectados, con actualizaciones de estado.
 
 ### Etapa 6: Diseño e impresion en 3D
 
