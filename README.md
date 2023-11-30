@@ -303,13 +303,13 @@ Nombre: CJMCU 0108
 ![CJMCU0108](images/CJMCU0108.png)
 
 Descripcion:
-Convertidor de nivel lógico bidireccional, puede realizar una conexión entre dispositivos que operan a diferentes voltajes. Funciona con configuraciones de drenaje abierto y push-pull. Este traductor de 8 bits utiliza dos rieles de fuente de alimentación configurables separados. El puerto A rastrea el voltaje de suministro del pin VA (VCCA). El pin VA acepta cualquier voltaje de suministro entre 1,2 V y 3,6 V. El puerto B rastrea el voltaje de suministro del pin VB (VCCB). El pin VB acepta cualquier voltaje de suministro entre 1,65 V y 5,5 V.
+Convertidor de nivel lógico bidireccional, puede realizar una conexión entre dispositivos que operan a diferentes tensiones. Funciona con configuraciones de drenaje abierto y push-pull. Este traductor de 8 bits utiliza dos rieles de fuente de alimentación configurables separados. El puerto A rastrea la tension de suministro del pin VA (VCCA). El pin VA acepta cualquier tension de suministro entre 1,2 V y 3,6 V. El puerto B rastrea la tension de suministro del pin VB (VCCB). El pin VB acepta cualquier tension de suministro entre 1,65 V y 5,5 V.
 
 Especificaciones:
 - Chip: TXS0108E
 - Canal: 8 canales
-- Voltaje de soporte del terminal VCCA: 1,2 V-3,6 V
-- Voltaje de soporte del terminal VCCB: 1,65 V-5,5 V
+- Tension de soporte del terminal VCCA: 1,2 V-3,6 V
+- Tension de soporte del terminal VCCB: 1,65 V-5,5 V
 - Velocidad máxima de transferencia para push-pull: 110 Mbps
 - Velocidad máxima de transferencia para drenaje abierto: 1,2 Mbps
 - Número de pines: 20 pines
