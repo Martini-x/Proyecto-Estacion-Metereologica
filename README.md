@@ -127,7 +127,7 @@ Cabe destacar que esta es la primera vez que en nuestro caso se usa una ESP32 en
  Especificaciones |                       ESP32                     | ARDUINO UNO
 :----:            |-------------------------------------------------|---------
  uProcesador      |          Tensilica Xtensa LX6          |  ATmega328P
-Conectividad      |      Sensor Efecto Hall A3144                   | 1.5 U$D*
+Conectividad      |            WIFI & BLUETOOTH            |-
  GPIO             |        Sensor Intensidad Luz Ultravioleta       | 6.5 U$D*
  Memoria          |   Sensor Digital De Humedad Temperatura Htu21d  | 3.5 U$D*
  Alimentacion     |        Sensor Presion Temperatura Bmp280        |   3 U$D*
