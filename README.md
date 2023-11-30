@@ -218,6 +218,7 @@ Nombre: Guva-s12s
 
 ![guva12s](images/guva12s.png)
 ![guva](images/guva.jpg)
+
 Descripcion: 
 El módulo sensor de luz ultravioleta GUVA-S12SD se utiliza para detectar la intensidad de la radiación UV. El sensor tiene una salida analógica, la corriente generada por el fotodiodo S12SD es convertida por el amplificador SGM8521 en un nivel de tensión proporcional.
 
