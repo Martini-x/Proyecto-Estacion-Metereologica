@@ -147,7 +147,7 @@ Capacidad de Direccionamiento de Memoria:
 
 Arduino Uno (8 bits): Puede direccionar hasta $2^8=256$ direcciones de memoria diferentes. Esto limita la cantidad de RAM y almacenamiento que puede manejar directamente.
 
-ESP32 (32 bits): Puede direccionar hasta $2^(32)$ direcciones de memoria diferentes, lo que le brinda una capacidad mucho mayor para manejar grandes cantidades de datos.
+ESP32 (32 bits): Puede direccionar hasta $2^{32}$ direcciones de memoria diferentes, lo que le brinda una capacidad mucho mayor para manejar grandes cantidades de datos.
 
 Complejidad y Funcionalidades:
 Arduino Uno (8 bits): Es más simple y generalmente se utiliza para proyectos más pequeños y tareas más simples. Puede ser más adecuado para proyectos de aficionados o educativos.
