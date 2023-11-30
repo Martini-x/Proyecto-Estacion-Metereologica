@@ -126,11 +126,11 @@ Cabe destacar que esta es la primera vez que en nuestro caso se usa una ESP32 en
 
  Especificaciones |                       ESP32                     | ARDUINO UNO
 :----:            |-------------------------------------------------|---------
- uProcesador      |          Tensilica Xtensa LX6          |  ATmega328P
-Conectividad      |            WIFI & BLUETOOTH            |-
- GPIO             |        Sensor Intensidad Luz Ultravioleta       | 6.5 U$D*
- Memoria          |   Sensor Digital De Humedad Temperatura Htu21d  | 3.5 U$D*
- Alimentacion     |        Sensor Presion Temperatura Bmp280        |   3 U$D*
+ uProcesador      |          Tensilica Xtensa LX6                   |  ATmega328P
+Conectividad      |            WIFI & BLUETOOTH                     |-
+ Pines            |        38                                       | 32
+ Memoria          |  448 KB ROM /  520 KB SRAM                      | 32 Flash / 2Kb SRAM
+ Alimentacion     |        5V                                       |   3V
 Programacion      |                                                 |
 </div>
 Nombre: ESP32 - Wi-Fi & Bluetooth MCU
