@@ -129,9 +129,11 @@ Cabe destacar que esta es la primera vez que en nuestro caso se usa una ESP32 en
  uProcesador      |          Tensilica Xtensa LX6                   |  ATmega328P
 Conectividad      |            WIFI & BLUETOOTH                     |-
  Pines            |        38                                       | 32
- Memoria          |  448 KB ROM /  520 KB SRAM                      | 32 Flash / 2Kb SRAM
+ Memoria          |  448 KB ROM /  520 KB SRAM                      | 32 Kb Flash / 2Kb SRAM
  Alimentacion     |        5V                                       |   5V 
-Programacion      |                                                 |
+Tension output    |          3V                                     |   5V
+Programacion      |   C (ARDUINO IDE) / Python (MicroPython)        |    C (ARDUINO IDE)
+
 </div>
 Nombre: ESP32 - Wi-Fi & Bluetooth MCU
 
