@@ -758,7 +758,8 @@ while True:
         button_pin.irq(handler=None)  # Detiene la interrupción al salir del programa
         print("Programa detenido")
 ```
-Plataforma de muestra de datos:
+
+###Plataforma de muestra de datos:
 
 ![logo](images/logo.png)
 
