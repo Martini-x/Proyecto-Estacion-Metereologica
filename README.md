@@ -767,6 +767,8 @@ ThingSpeak es una API y aplicación de código abierto para el Internet de las C
 
 Con ThingSpeak, el usuario puede crear aplicaciones de registro de datos de sensores, aplicaciones de seguimiento de ubicación y una red social para los objetos conectados, con actualizaciones de estado.
 
+![pantallita](images/pantallitacondatos.jpg)
+
 ### Etapa 6: Diseño e impresion en 3D
 
 En esta etapa procedimos por diseñar e imprimir todo lo necesisario para poder crear todo lo necesario para poder poder hacer los instrumentos que miden velocidad del viento (Anemometro), direccion del viento (Veleta), precipitacion (Pluviometro), ademas hicimos la Stevenson Screen que sirve para poder proteger a el sensor de luz UV y el sensor de humedad y temperatura de la lluvia, suciedad, hojas, etc.
