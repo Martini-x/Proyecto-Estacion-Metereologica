@@ -317,15 +317,15 @@ Especificaciones:
 
 Pines: 
 
-Va: Acepta cualquier tension de suministro entre 1,2 V y 3,6 V, la cual va a tener toda la linea de pines "a"
+- Va: Acepta cualquier tension de suministro entre 1,2 V y 3,6 V, la cual va a tener toda la linea de pines "a"
 
-Vb: Acepta cualquier tension de suministro entre 1,65 V y 5,5 V., la cual va a tener toda la linea de pines "b"
+- Vb: Acepta cualquier tension de suministro entre 1,65 V y 5,5 V., la cual va a tener toda la linea de pines "b"
 
-GND: Tierra
+- GND: Tierra
 
-Ax/Bx: Son los 8 canales I/O, se acomodan por pares con los numeros (A1, B1; A2, B2;...)
+- Ax/Bx: Son los 8 canales I/O, se acomodan por pares con los numeros (A1, B1; A2, B2;...)
 
-OE: Out Enable, habilita las salidas del modulo.
+- OE: Out Enable, habilita las salidas del modulo.
 
 ### Pantalla OLED
 
