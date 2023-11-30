@@ -232,6 +232,10 @@ Especificaciones:
 - Angulo de Apertura: 130 Grados
 - Dimensiones: 11mm x 27mm
 
+Pines:
+    - VCC: Alimentacion
+    - GND: Tierra
+    - SIG: Señal de salida (valores anaogicos entre 0 y 4095)
 
 ### Sensor de humedad y temperatura
 Nombre: AHT10
