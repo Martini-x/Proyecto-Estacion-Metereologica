@@ -315,7 +315,12 @@ Especificaciones:
 - Número de pines: 20 pines
 - Tamaño: 26 mm x 16 mm x 3 mm
 
-
+Pines: 
+Va: Acepta cualquier tension de suministro entre 1,2 V y 3,6 V, la cual va a tener toda la linea de pines "a"
+Vb: Acepta cualquier tension de suministro entre 1,65 V y 5,5 V., la cual va a tener toda la linea de pines "b"
+GND: Tierra
+Ax/Bx: Son los 8 canales I/O, se acomodan por pares con los numeros (A1, B1; A2, B2;...)
+OE: Out Enable, habilita las salidas del modulo.
 ### Pantalla OLED
 
 Nombre: SSH1106
