@@ -301,7 +301,7 @@ Especificaciones:
 - Voltaje de salida igual al voltaje de entrada
 - Proteccion de polaridad inversa
 - Rango de temperatura:-40°C a 85°C
-- 
+  
 ### Adaptador de nivel logico 
 
 Nombre: CJMCU 0108
