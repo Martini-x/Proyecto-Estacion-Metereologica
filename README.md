@@ -159,6 +159,33 @@ La diferencia principal entre arquitecturas de 32 bits y 8 bits, como la que enc
 
 En resumen, mientras que una arquitectura de 8 bits es suficiente para muchas aplicaciones más simples y proyectos de hobby, una arquitectura de 32 bits como la de la ESP32 ofrece mayor potencia y versatilidad, lo que la hace más adecuada para proyectos más complejos y exigentes. Sin embargo, también puede consumir más energía y ser más costosa. La elección entre ellas dependerá de los requisitos específicos de tu proyecto.
 
+
+Programacion de la ESP32:
+
+
+La ESP32 es un microcontrolador que se puede programar en varios lenguajes, y la elección del lenguaje a menudo depende de los requisitos del proyecto y las preferencias del programador. En el desarrollo del proyecto se decidió programar la ESP32 con MicroPython como para poder encarar una alternativa de programacion con la que no se habia trabajado antes. Aquí hay algunas diferencias clave al programar la ESP32 en diferentes lenguajes:
+
+C/C++ con el Entorno de Desarrollo de Arduino:
+
+- Ventajas:
+    Amplia comunidad y soporte.
+    Fácil integración de bibliotecas y módulos.
+    Mucha documentación y tutoriales disponibles.
+- Desventajas:
+    Mayor consumo de recursos en comparación con lenguajes de más alto nivel.
+    Menos abstracciones de hardware en comparación con Python o JavaScript.
+  
+MicroPython:
+
+- Ventajas:
+    Sintaxis de Python, que es fácil de aprender y leer.
+    Rápido desarrollo de prototipos y pruebas.
+    Interactividad a través del REPL (Read-Eval-Print Loop).
+- Desventajas:
+    Mayor consumo de recursos que programar en C/C++ directamente.
+    Algunas bibliotecas de bajo nivel pueden no estar disponibles o ser diferentes.
+
+    
 Nombre: ESP32 - Wi-Fi & Bluetooth MCU
 
 ![ESP32](images/esp32.png)
