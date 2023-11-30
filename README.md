@@ -130,7 +130,7 @@ Cabe destacar que esta es la primera vez que en nuestro caso se usa una ESP32 en
 Conectividad      |            WIFI & BLUETOOTH                     |-
  Pines            |        38                                       | 32
  Memoria          |  448 KB ROM /  520 KB SRAM                      | 32 Flash / 2Kb SRAM
- Alimentacion     |        5V                                       |   3V
+ Alimentacion     |        5V                                       |   5V 
 Programacion      |                                                 |
 </div>
 Nombre: ESP32 - Wi-Fi & Bluetooth MCU
