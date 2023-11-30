@@ -134,6 +134,32 @@ Conectividad      |            WIFI & BLUETOOTH                     |-
 Tension output    |          3V                                     |   5V
 Programacion      |   C (ARDUINO IDE) / Python (MicroPython)        |    C (ARDUINO IDE)
 
+Diferencias entre arquitectura de 32 bits y 8 bits:
+
+
+La diferencia principal entre arquitecturas de 32 bits y 8 bits, como la que encuentras en la ESP32 y el Arduino Uno respectivamente, está en la cantidad de datos que pueden procesar en cada ciclo de reloj y en la capacidad de direccionamiento de memoria.
+
+Procesamiento de Datos:
+
+Arduino Uno (8 bits): Puede procesar datos de hasta 8 bits en cada ciclo de reloj. Esto significa que puede manejar números de 0 a 255 directamente en una operación. Operaciones con números más grandes pueden requerir múltiples ciclos de reloj.
+ESP32 (32 bits): Puede procesar datos de hasta 32 bits en cada ciclo de reloj, lo que permite manejar números mucho más grandes o realizar operaciones más complejas de una vez.
+Capacidad de Direccionamiento de Memoria:
+
+Arduino Uno (8 bits): Puede direccionar hasta $2^8=256$
+2 
+8
+ =256 direcciones de memoria diferentes. Esto limita la cantidad de RAM y almacenamiento que puede manejar directamente.
+ESP32 (32 bits): Puede direccionar hasta 
+2
+32
+2 
+32
+  direcciones de memoria diferentes, lo que le brinda una capacidad mucho mayor para manejar grandes cantidades de datos.
+Complejidad y Funcionalidades:
+
+Arduino Uno (8 bits): Es más simple y generalmente se utiliza para proyectos más pequeños y tareas más simples. Puede ser más adecuado para proyectos de aficionados o educativos.
+ESP32 (32 bits): Es más potente y versátil, con capacidades de conectividad Wi-Fi y Bluetooth incorporadas. Es adecuado para proyectos más complejos y avanzados, como aplicaciones IoT (Internet de las cosas).
+En resumen, mientras que una arquitectura de 8 bits es suficiente para muchas aplicaciones más simples y proyectos de hobby, una arquitectura de 32 bits como la de la ESP32 ofrece mayor potencia y versatilidad, lo que la hace más adecuada para proyectos más complejos y exigentes. Sin embargo, también puede consumir más energía y ser más costosa. La elección entre ellas dependerá de los requisitos específicos de tu proyecto.
 </div>
 Nombre: ESP32 - Wi-Fi & Bluetooth MCU
 
