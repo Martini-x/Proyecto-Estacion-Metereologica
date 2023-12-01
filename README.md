@@ -293,6 +293,11 @@ Nombre: A3144
 Descripcion:
 Sensor de efecto hall con salida digital y retención de estado. Cambia de cero a uno ante la presencia de un campo electromagnetico. En estado de reposo la salida del sensor se encuentra en nivel "Alto" y ante la presencia de un campo electromagnetico la salida pasa a nivel "Bajo".
 
+Pines:
+- Pin izquierda, VCC: Alimentacion
+- Pin centro, GND: Tierra
+- Pin derecha, Signal: salida de señal digital (1 o 0)
+
 Especificaciones:
 - Voltaje de Operacion: 4.5V A 25V
 - Voltaje de Operacion Tipico: 5V
