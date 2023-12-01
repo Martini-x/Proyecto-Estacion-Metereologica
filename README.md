@@ -396,7 +396,30 @@ Durante esta etapa realizamos los diagramas electricos en KiCad (sch) con fuente
 
 Descripcion:
 En esta etapa realizamos prueba de todos los componentes por separado para ver el funcionamiento de cada uno para leugo poder juntarlos en un solo codigo. Probamos todos los sensores, la pantalla y la comunicacion Wifi con la nube para poder enviar datos.
+
+Cabe destacar la explicacion de el I2C, ya que dicho protocolo de comunicacion fue usado en varios de nuestros sensores, como por ejemplo el BMP280, AHT10 y la pantalla OLED SSH1106.
+
+I2C
+
+Que significa "Inter-Integrated Circuit" o "Inter-IC", es un protocolo de comunicación serial que permite la transferencia de datos entre varios dispositivos electrónicos utilizando solo dos cables: uno para la transmisión de datos (SDA) y otro para la sincronización de reloj (SCL).
+Aquí hay algunos conceptos clave sobre I2C:
+
+1. Dispositivos Maestro y Esclavo: En un bus I2C, hay al menos un dispositivo maestro y uno o más dispositivos esclavos. El maestro inicia y controla la comunicación, mientras que los esclavos responden a las solicitudes del maestro.
+
+2. SDA (Serial Data Line): Este cable transporta los datos entre los dispositivos. Toda la información, ya sea de lectura o escritura, fluye a través de este canal.
+
+3. SCL (Serial Clock Line): Este cable lleva la señal de reloj que sincroniza la transmisión de datos entre los dispositivos. La velocidad de transferencia de datos está determinada por la frecuencia de esta señal.
+
+4. Direcciones de Dispositivos: Cada dispositivo esclavo en un bus I2C tiene una dirección única de 7 bits (aunque puede extenderse a 10 bits en algunas variantes). El maestro utiliza esta dirección para seleccionar el dispositivo con el que desea comunicarse.
+
+5. Inicio y Detención de la Comunicación: Antes de que la comunicación comience, el maestro envía una secuencia de inicio (start) en la que el nivel de SDA se baja mientras SCL está alto. Al final de la comunicación, se envía una secuencia de detención (stop), donde SDA sube mientras SCL está alto.
+
+6. Transferencia de Datos: La transferencia de datos en I2C sigue el formato de marco de datos. Cada bit es transmitido mientras SCL está en un estado específico (alto o bajo). La transmisión de 8 bits generalmente se sigue de un bit de ACK/NACK (acknowledge/no acknowledge) enviado por el dispositivo receptor.
+
+I2C se utiliza comúnmente en sistemas embebidos, sensores, módulos de memoria, y otros dispositivos donde es crucial tener una interfaz de comunicación eficiente y de bajo costo. La simplicidad y la capacidad de conectar múltiples dispositivos en el mismo bus son algunas de las razones por las que I2C es tan popular en la electrónica.
+
 Codigos de prueba:
+
 AHT10:
 ```python
 import utime
