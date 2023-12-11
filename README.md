@@ -829,7 +829,7 @@ A continuacion explicaremos los diseños y como funcionan:
 ![PLUVIOMETRO_SUPERIOR](images/PLUVIOMETRO_SUPERIOR.png)
 
 - Stevenson screen:
-  La stenvenson screen nos servira para poder proteger el sensor UV y el sensor de humedad y temperatura de la lluvia, polvo, hojas, ademas de otras variables de el entorno que puedan ser contrarestantes para el optimo funcionamiento de dichos sensores. Ambos sensores iran dentro de la Stevenson screen (ya que los platos son circunferecia con huevo en el centro) y acoplados a la base.
+  La stenvenson screen nos servira para poder proteger el sensor UV y el sensor de humedad y temperatura de la lluvia, polvo, hojas, ademas de otras variables de el entorno que puedan ser contrarestantes para el optimo funcionamiento de dichos sensores. Ambos sensores iran dentro de la Stevenson screen (ya que los platos son circunferecia con hueco en el centro) y acoplados a la base.
 ![STEVENSONSCREEN](images/STEVENSONSCREEN.png)
 
 
