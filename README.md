@@ -1,13 +1,9 @@
 # ESCUELA TÉCNICA N°1 “Otto Krause”
-## TALLER DE ELECTRÓNICA
-## 5° 1a ELT 2023
+## PRACTICAS PROFESIONALIZANTE
+## 6° 1a ELT 2023
 ## Docentes: 
-- Ignacio D'Amore
-- Nahuel Maldonado
-- Germán Santoandré
-## Tutor: 
-- Ignacio D'Amore
-# Informe: Estacion metereologica | Martin Sanchez || Thomas Acosta 
+- Eugenia Grandi
+# Informe: Estacion metereologica | Martin Sanchez || Thomas Acosta || Bruno Vega
 
 ## Indice
 - [Descripcion del proyecto](#Descripcion-del-proyecto)
